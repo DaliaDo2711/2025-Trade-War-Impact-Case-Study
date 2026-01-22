@@ -8,19 +8,20 @@ Geopolitical Risk and Portfolio Resilience Analysis
 ---
 
 ## Project Overview
-This case study analyzes how U.S. companies across different sectors were affected by a **trade war initiated in early 2025**. Using Bloomberg-provided company fundamentals, factor exposures, and market performance data, the project examines which business characteristics demonstrated **resilience** and which created **vulnerability** during periods of heightened geopolitical risk.
+This project analyzes how U.S. publicly traded companies were positioned prior to the 2025 U.S.–China trade war and examines which firm characteristics, factor exposures, and business structures may have influenced vulnerability or resilience once trade tensions escalated.
 
-The analysis focuses on sector performance, risk–return behavior, factor exposure patterns, ESG disclosure, and employment structure to provide **actionable insights for portfolio managers** facing future trade tensions.
+Using Bloomberg-style fundamentals and performance data, this study establishes a pre-trade-war baseline across sectors, market capitalization tiers, factor exposures, and firm characteristics. The goal is to provide portfolio managers with actionable insights into how geopolitical shocks interact with firm-level risk profiles.
 
 ---
 
 ## Project Motivation
-Geopolitical trade conflicts can introduce sudden shocks to financial markets, disrupting supply chains, pricing power, and investor sentiment. While trade wars are macroeconomic events, their impacts are often **uneven across sectors and business models**.
+Trade wars introduce sudden disruptions to global supply chains, pricing power, and investor expectations. Understanding company positioning **prior to the shock** is essential for:
 
-This project aims to:
-- Identify which sectors and company profiles were most resilient during the 2025 trade war
-- Understand how factor exposures and firm characteristics influenced performance
-- Translate analytical findings into portfolio strategy recommendations
+- Interpreting market reactions during policy escalation  
+- Identifying resilient vs vulnerable business models  
+- Designing portfolios robust to geopolitical risk  
+
+This project integrates sector exposure, factor profiles, firm size, and labor structure into a unified analytical framework.
 
 ---
 
@@ -120,63 +121,84 @@ The timeline was visualized using Matplotlib to support event-driven interpretat
 *Timeline research and formatting were assisted by ChatGPT for clarity and documentation.*
 
 ---
+## Key Findings
 
-## Analysis & Key Findings
+### Market Structure
+- Firm size is highly skewed: a small number of mega-cap firms dominate total market value.
+- Small- and mid-cap firms account for most observations, making size a critical risk dimension.
 
-### Sector-Level Performance
-- Technology and Consumer Discretionary sectors dominated market capitalization
-- These sectors also showed stronger average returns, suggesting pricing power and adaptability
-- More defensive sectors (Utilities, Materials, Real Estate) had smaller market cap representation
+### Sector Composition
+- Financials and Technology are the most represented sectors.
+- Industrials and Consumer Discretionary show broad exposure to global supply chains.
+- Utilities and Real Estate are smaller and more concentrated.
 
-### Risk vs Return
-- Beta showed **no strong relationship** with total return during the trade war period
-- Traditional CAPM-style risk measures were less informative during geopolitical shocks
+### Pre-Trade-War Performance
+- Small-cap firms outperformed mid- and large-caps prior to the trade war, reflecting elevated risk appetite.
+- Returns were highly concentrated, with a long right tail driven by a small number of firms.
 
-### Factor Exposure Analysis
-Correlation analysis revealed:
-- Positive association between returns and **Momentum** and **Value** exposures
-- Negative association between returns and **Volatility**, **Leverage**, and **Earnings Variability**
-- Profitability and dividend-related factors showed moderate resilience
+### Risk & Factor Drivers
+- Beta (Y-1) clustered around 1 and explained little of the cross-sectional return variation.
+- Momentum exhibited a strong positive correlation with returns.
+- Value, dividend yield, and profitability were negatively correlated with performance, consistent with a risk-on market regime.
 
-### ESG & Employment Structure
-- ESG disclosure scores varied widely across firms
-- Employment-heavy companies showed mixed performance, suggesting sector-dependent labor sensitivity
-- Workforce scale alone did not predict returns, but interacted with sector exposure
+### Business Structure
+- Workforce size showed no strong relationship with returns.
+- Sector and business model mattered more than labor scale alone.
+- Asset-light firms displayed greater dispersion and upside potential.
 
+---
+
+## Conclusions & Implications
+The U.S. equity market entered the 2025 trade war in a momentum-driven, risk-seeking environment. Performance was driven more by factor positioning and business structure than by traditional risk measures such as beta.
+
+This baseline context is essential for understanding how trade-war escalation later altered investor behavior and firm resilience.
+
+**Portfolio implications:**
+- Do not rely on momentum during geopolitical risk
+- Use size as a risk control, not a return predictor
+- Emphasize balance-sheet strength and operational flexibility
+- Combine sector, factor, and structural signals for resilience analysis
+
+---
+
+## Key Takeaway
+Establishing a clean pre-shock baseline reveals that market risk pricing before the trade war was fundamentally different from conditions during policy escalation, underscoring the importance of context in event-driven financial analysis.
 ---
 
 ## Visualizations Included
-- Sector distribution by company count (BICS Level 1)
-- Market capitalization distribution (log scale)
-- ESG disclosure score distribution
-- Beta (Y-1) distribution
-- Beta vs Total Return scatter plot by sector
-- Factor exposure vs return correlation heatmap
-- Total Return (Y-1) distribution
-- Employee count vs Total Return bubble plot
-- Factor exposure distributions
-- Factor correlation matrix
 
----
+- **Trade War Timeline (2025)**  
+  Key U.S.–China tariff escalation events visualized to provide macroeconomic context for the analysis.
 
-## Key Takeaways
-- Market responses to trade war shocks are **multi-dimensional**
-- Beta alone is insufficient for understanding performance during geopolitical stress
-- Factor exposures provide stronger explanatory power than traditional risk metrics
-- Resilient portfolios favored companies with:
-  - Lower leverage
-  - Lower volatility
-  - Strong momentum
-  - Value characteristics
-- Sector exposure and business structure matter more than firm size alone
+- **Sector Distribution (BICS Level 1)**  
+  Bar chart showing the number of firms by sector to illustrate market composition and exposure prior to the trade war.
 
----
+- **Market Capitalization Distribution (Log Scale)**  
+  Histogram highlighting the right-skewed nature of firm size and the dominance of mega-cap companies.
 
-## Portfolio Implications
-For portfolio managers preparing for future trade tensions:
-- Overweight sectors with pricing power and adaptive supply chains
-- De-emphasize beta during event-driven volatility
-- Apply multi-factor strategies emphasizing stability and valuation strength
-- Monitor labor-intensive firms for policy and cost sensitivity
+- **Market Cap Tier vs Total Return (Y-1)**  
+  Comparison of average pre-trade-war returns across small-, mid-, and large-cap firms.
 
----
+- **Beta (Y-1) Distribution**  
+  Distribution of pre-trade-war market sensitivity to establish baseline risk exposure.
+
+- **Beta vs Total Return (Y-1) with Regression Line**  
+  Scatter plot with fitted regression to assess the relationship between market risk and returns before the trade war.
+
+- **Factor Exposure vs Total Return (Y-1) Correlation Heatmap**  
+  Heatmap showing how momentum, value, volatility, leverage, and other factor exposures related to returns in the pre-trade-war period.
+
+- **Total Return (Y-1) Distribution**  
+  Histogram illustrating dispersion, skewness, and concentration of firm-level returns prior to the trade war.
+
+- **Employee Count vs Total Return (Bubble Plot)**  
+  Scatter plot (bubble size = market cap) examining how workforce size and sector characteristics relate to pre-trade-war performance.
+
+- **Factor Exposure Distributions**  
+  Individual distributions of major factor exposures to confirm balance and dispersion across firms.
+
+- **Factor Correlation Matrix**  
+  Heatmap showing relationships among factor exposures and confirming limited multicollinearity.
+
+
+

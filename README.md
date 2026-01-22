@@ -4,9 +4,7 @@ Data Visualization using Python
 Geopolitical Risk and Portfolio Resilience Analysis
 
 ## Quick Links
-- Google Colab Notebook: *[(add your Colab link here)](https://drive.google.com/file/d/1WzgzTG90VAL9lSd-09AQd_-sgE5UxQff/view?usp=sharing)*
-- Dataset (Bloomberg Export): Provided via course materials
-
+- Google Colab Notebook: https://drive.google.com/file/d/1WzgzTG90VAL9lSd-09AQd_-sgE5UxQff/view?usp=sharing 
 ---
 
 ## Project Overview

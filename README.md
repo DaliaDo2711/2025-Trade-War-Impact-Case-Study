@@ -180,6 +180,3 @@ For portfolio managers preparing for future trade tensions:
 - Monitor labor-intensive firms for policy and cost sensitivity
 
 ---
-
-## Author
-**Dalia Do**
